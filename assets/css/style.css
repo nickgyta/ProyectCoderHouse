@@ -1,0 +1,434 @@
+header{
+    min-height: 100vh;
+    margin: 0 auto;
+    margin-bottom: -2014px;
+    margin-top: -35px;
+    background-image: url(https://wallpapercave.com/wp/wp4069424.jpg);
+    background-position: bottom;
+    width: auto;
+}
+
+.barra {
+    font-family: 'Tangerine', serif;
+    font-size: 30px;
+  } 
+  .barra__list{
+    display: grid;
+    grid-template-rows: 15% 5% 5% 5% 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+.barra__li{
+    display: grid;
+    font-size: 50px;
+    justify-content: flex-start;
+    margin-bottom: 284px;
+    margin-left: -34px;
+}
+.barra__li a:hover{
+    animation: bounce;
+    animation-duration: 1s;
+}
+.logo__image{
+    display: grid;
+    width: 95%;
+    justify-content: center;
+}
+
+.barra__li__anchor{
+    display: grid;
+    text-decoration: none;
+    background-color: rgb(207, 58, 91);
+    color: antiquewhite;
+    border-radius: 30px;
+    margin-bottom: 219px;
+    padding: 11px;
+}
+@media screen and (min-width: 545px) {
+    header {
+        min-height: 100vh;
+        margin: 0 auto;
+        margin-bottom: -138px;
+        margin-top: -30px;
+        background-image: url(https://wallpapercave.com/wp/wp4069424.jpg);
+        width: auto;
+    }
+    
+    .barra {
+        font-family: 'Tangerine', serif;
+        font-size: 30px;
+      } 
+      .barra__list{
+        display: grid;
+        grid-template-columns: 15% 2% 2% 2% 2%;
+        align-items: end;
+        justify-content: space-between;
+    }
+    
+    .barra__li{
+        display: grid;
+        font-size: 50px;
+        justify-content: flex-end;
+        margin-bottom: -294px;
+        margin-left: -45px;
+    }  
+    .barra__li a:hover{
+        animation: bounce;
+        animation-duration: 1s;
+    }
+    .logo__image{
+        display: grid;
+        width: 160%;
+        justify-content: center;
+    }
+    .barra__li__anchor{
+        display: grid;
+        text-decoration: none;
+        background-color: rgb(207, 58, 91);
+        color: antiquewhite;
+        border-radius: 21px;
+        margin-bottom: 199px;
+        padding: 11px;
+    }
+}
+
+
+body{
+    font-family: sans-serif;
+    background-color: lightgrey;
+    margin: 0 auto;
+}
+.main{
+    display: flex;
+    background-color: lavenderblush
+}
+
+.slider {
+    background-image: linear-gradient(to top, #4A73AE,#92dccd,#ffe9ca, #dbe4cf);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.slide{
+    display: flex;
+    border-radius: 13px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-left: 00px;
+    padding-bottom: 0px;
+    
+}
+li.slide img{
+    width: 100%;
+}
+footer{
+    display: grid;
+    max-width: -webkit-fill-available;
+    min-width: 250px;
+    background-image: linear-gradient(to right bottom, #4f3e37, #dbe4cf);
+}
+footer div h1{
+    display: flex;
+    font-family: 'Aclonica', sans-serif;
+}
+footer div h3{
+    display: flex;
+
+}
+
+iframe{
+    display: flex;
+    width: 100%;height: 450px;
+    padding-top: 30px;
+    padding-bottom: 15px
+}
+div p{
+    font-family: 'Aclonica';
+    color: crimson;
+}
+main{
+    display: flex;
+    flex-flow: column;    
+    background-color: lavenderblush;
+}
+.info {
+    border-radius: 8px;
+    display: grid;
+    font-size: larger;
+    justify-content: left;
+    font-family: 'Aclonica', sans-serif;
+    color: crimson;
+    background-image: linear-gradient(to right bottom, #4f3e37, #dbe4cf);
+    padding: 9px;
+    margin-top: -18px;
+    margin-bottom: -1px;
+}
+
+.formulario{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    margin-left: 75px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-large;
+    font-weight: 1000;
+}
+
+.formu{
+display: flex;
+height: 50px;
+box-sizing: border-box;
+padding: 30px;
+margin-bottom: 30px;
+border: rgba(24,149,215,1);
+border-style: solid;
+border-width: 3px;
+color: rgba(24,149,215,1);
+}
+.btn{
+    display: flex;
+    height: 50px;
+    border-radius: 20px;
+    border: rgb(2 0 0 / 30%) 0px solid;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    background: crimson;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 12pt;
+    transition: background .4s;
+    cursor: pointer;
+}
+.flex__container {
+    background-image: linear-gradient(#4A73AE,#92dccd,#ffe9ca, #dbe4cf);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+}
+.cardProduct {
+    width: 300px;
+    height: 450px;
+    border-color: rgb(168, 165, 165);
+    border-style: solid;
+    border-width: 3px;
+    margin-top: 10px;
+    margin-right: 35px;
+    margin-bottom: 5px;
+    margin-left: 53px;
+}
+
+.cardProduct__image {
+    width: 100%;
+}
+
+.cardProduct__description {
+    padding: 10px;
+}
+
+.cardProduct__description__price {
+    margin-top: 10px;
+}
+
+.cardProduct__description__text {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 25px;
+}
+
+.cardProduct__description__action {
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    padding: 16px;
+    margin-top: 38px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    background: crimson;
+    font-size: 12pt;
+    width: 40%;
+    text-decoration: none;
+    border: rgb(2 0 0 / 30%) 0px solid;
+    color: #FFF;
+}
+
+.borderRounded {
+    border-radius: 10px;
+
+}
+.info2{
+    font-family: sans-serif;
+}
+.fotos{
+    display: flex;
+    flex-flow: row;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #FFFf;
+}
+.fotosLi{
+    display: flex;
+    border: groove
+}
+.backg{
+    font-family: cursive;
+    display: flex;
+    background-color: rgba(24,149,215,1);
+    color: rgb(68, 67, 67);
+    font-size: x-large;
+}
+.negrin{
+    background-color: rgb(68, 67, 67);
+}
+.negrin__li{
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-large;
+    flex-flow: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: antiquewhite;
+
+}
+
+.piecito{
+    display: grid;
+    grid-template-rows: 10% 10% 40% 30%;
+    align-items: flex-start;
+   
+}
+.grid1{
+    display: grid;
+    font-size: small;
+    justify-content: space-between;
+    list-style: none;
+}
+.grid1 li p{
+    display: grid;
+    color: crimson;
+    font-size: 24px;
+    font-family: 'Aclonica';
+}
+.grid2{
+    list-style: none;
+    display: grid;
+    font-size: small;
+}
+.grid2 li h2{
+    display: grid;
+    width: fit-content;
+    font-family: 'Playball', cursive;
+    color: antiquewhite;
+}
+.grid3{
+    display: grid;
+    justify-content: space-between;
+    list-style: none;
+    color: #ffe9ca;
+    font-size: 15px;
+}
+.grid3 h2{
+    display: grid;
+    
+}
+.orden{
+    display: grid;
+}
+.grid4{
+    display: grid;
+    justify-content: space-between;
+    color: #ffe9ca;
+    list-style: none;
+}
+.grid4 li .face a:hover{
+    animation: bounce;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    background-color: #4A73AE;
+    border-radius: 10px; 
+}
+/* .grid4 li a:hover{
+    animation: bounce;
+    animation-duration: 1s;
+    background-color: #4A73AE;
+    border-radius: 10px;
+    
+} */
+.grid4 li a img{
+    width: 50px;
+}
+@media screen and (min-width: 500px) {
+    .piecito{
+        display: grid;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-columns: 50% 50%;
+        align-items: flex-start;
+       
+    }
+    .grid1{
+        display: grid;
+        font-size: small;
+        justify-content: space-between;
+        list-style: none;
+    }
+    .grid1 li h1{
+        display: grid;
+        color: crimson;
+    }
+    .grid2{
+        list-style: none;
+        display: grid;
+        font-size: small;
+    }
+    .grid2 li h2{
+        display: grid;
+        width: fit-content;
+        font-family: 'Playball', cursive;
+        color: #ffe9ca;
+    }
+    .grid3{
+        display: grid;
+        justify-content: space-between;
+        list-style: none;
+        color: #ffe9ca;
+        font-size: 15px;
+    }
+    .grid3 h2{
+        display: grid;
+    }
+    .orden{
+        display: grid;
+    }
+    .grid4{
+        display: grid;
+        justify-content: space-between;
+        color: #ffe9ca;
+        list-style: none;
+    }
+    .grid4 li a:hover{
+        animation: bounce;
+        animation-duration: 1s;
+        background-color: #ffe9ca;
+    }
+    .grid4 li a img{
+        width: 50px;
+        background-color: #958673;
+    }
+    .grid4 li a img:hover{
+        width: 80px;
+        background-color: #ffe9ca;
+        border-radius: 15px;
+    }
+}
+.mapita{
+    
+}
