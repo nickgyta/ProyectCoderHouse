@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="assets/logo.png">
-        <link rel="stylesheet" href="../css/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Aclonica&family=Montserrat:wght@100&family=Playball&family=Tangerine:wght@700&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <title>Home</title>
-    
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aclonica&family=Montserrat:wght@100&family=Playball&family=Tangerine:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Home</title>
+
+</head>
 
 
 <header>
@@ -23,15 +24,16 @@
     <div class="barra">
         <nav>
             <ul class="barra__list">
-                <li class="barra__li"><a href="/index.html"><img src="../logo.png" alt="ICO"
-                    class="logo__image"></a></li>
-            <li class="barra__li"><a class="barra__li__anchor" href="./destinos.html"><strong>Destinos</strong>
-            </a></li>
-            <li class="barra__li"><a class="barra__li__anchor" href="./reserveEnLinea.html"><strong>Reservas</strong></a></li>
-            <li class="barra__li"><a class="barra__li__anchor" href="./nosotros.html"><strong>Nosotros</strong></a>
-            </li>
-            <li class="barra__li"><a class="barra__li__anchor" href="./contacto.html"><strong>Contacto</strong></a>
-            </li>
+                <li class="barra__li"><a href="/index.html"><img src="../logo.png" alt="ICO" class="logo__image"></a>
+                </li>
+                <li class="barra__li"><a class="barra__li__anchor" href="./destinos.html"><strong>Destinos</strong>
+                    </a></li>
+                <li class="barra__li"><a class="barra__li__anchor"
+                        href="./reserveEnLinea.html"><strong>Reservas</strong></a></li>
+                <li class="barra__li"><a class="barra__li__anchor" href="./nosotros.html"><strong>Nosotros</strong></a>
+                </li>
+                <li class="barra__li"><a class="barra__li__anchor" href="./contacto.html"><strong>Contacto</strong></a>
+                </li>
             </ul>
         </nav>
     </div>
@@ -40,29 +42,73 @@
 <body>
     <main>
         <div class="info">
-                    <p>Enviar Mensaje</p>
+            <p>Suscribete y te contactaremos:</p>
+
+
+
+
+
+
+
+            <form class="row g-3">
+                <div class="col-md-6">
+
+                    <input type="text" class="form-control" placeholder="Nombres" aria-label="First name">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Telefono</label>
+                    <input type="tel" class="form-control" placeholder="Ejm:+54-387-5246176">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputState" class="form-label">Pais</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Elegir su pais...</option>
+                        <option>Argentina</option>
+                        <option>Brasil</option>
+                        <option>Paraguay</option>
+                        <option>Uruguay</option>
+                        <option>Mexico</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputState" class="form-label">Provincia/Estado</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Elija su provincia o estado</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputZip" class="form-label">Codigo Postal</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-md-12">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="email" class="form-control" placeholder="nico1234@ejemplo.com" id="inputEmail4">
+                </div>
+
+                <div class="col-md-12">
+                    <span class="input-text">Dejenos un mensaje o una consulta</span>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                </div>
+
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Suscribete
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+
+
         </div>
-
-        <form class="formulario" action="">
-            <div>
-                <label for="nombre">Nombre y Apellido:</label>
-                <input class="formu" type="text" name="nombre" id="" placeholder="E.g: Nicolas Gimenez">
-            </div>
-            <div>
-                <label for="telefono">Teléfono</label>
-                <input class="formu" type="tel" name="telefono" id="" placeholder="E.g: +54 387 5246176">
-            </div>
-            <div>
-                <label for="email">Correo Electronico</label>
-                <input class="formu" type="email" name="Correo Electronico" id="" placeholder="abcdefg@hijklm.com">
-            </div>
-            <div>
-                <label for="text">Mensaje</label>
-                <input class="formu" type="text" name="Mensaje" id="" placeholder="Escribe aqui tu mensaje..">
-            </div>
-
-            <button class="btn">Send message</button>
-        </form>
     </main>
 
     <footer>
@@ -98,11 +144,11 @@
             <ul class="grid4">
                 <h2>Social Media</h2>
 
-                <li><a href="https://www.facebook.com"><img src="../svg/facebook.svg" alt=""></a>
+                <li><a href="https://www.facebook.com"><img class="face" src="../svg/facebook.svg" alt=""></a>
                 </li>
-                <li><a href="https://www.instagram.com"><img src="../svg/instagram.svg" alt=""></a></li>
-                <li><a href="https://www.gmail.com"><img src="../svg/mail.svg" alt=""></a></li>
-                <li><a href="https://wa.me/5493875246176"><img src="../svg/whap.svg" alt=""></a>
+                <li><a href="https://www.instagram.com"><img class="ig" src="../svg/instagram.svg" alt=""></a></li>
+                <li><a href="https://www.gmail.com"><img class="mail" src="../svg/mail.svg" alt=""></a></li>
+                <li><a href="https://wa.me/5493875246176"><img class="whap" src="../svg/whap.svg" alt=""></a>
                 </li>
 
             </ul>
@@ -114,6 +160,7 @@
             <p>Copyright © DESTINOS MAGICOS PLUS TRAVEL SA 2019</p>
         </div>
     </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -116,7 +116,6 @@ body{
     border-radius: 13px;
     margin-bottom: 20px;
     padding-top: 10px;
-    padding-right: 40px;
     padding-left: 00px;
     padding-bottom: 0px;
     
@@ -349,23 +348,26 @@ color: rgba(24,149,215,1);
     color: #ffe9ca;
     list-style: none;
 }
-.grid4 li .face a:hover{
-    animation: bounce;
-    animation-delay: 0s;
-    animation-duration: 1s;
-    background-color: #4A73AE;
-    border-radius: 10px; 
-}
-/* .grid4 li a:hover{
-    animation: bounce;
-    animation-duration: 1s;
-    background-color: #4A73AE;
-    border-radius: 10px;
-    
-} */
+
 .grid4 li a img{
     width: 50px;
+}   
+ .grid4 li a img:hover{
+    width: 80px;
+    background-color: #1c44b3;
+    border-radius: 15px;
 }
+
+.grid4 li a .ig:hover{
+    background-color: #d11b85;
+}
+.grid4 li a .mail:hover{
+    background-color: #ffe9ca;
+}
+.grid4 li a .whap:hover{
+    background-color: #11b611;
+}
+
 @media screen and (min-width: 500px) {
     .piecito{
         display: grid;
@@ -414,21 +416,21 @@ color: rgba(24,149,215,1);
         color: #ffe9ca;
         list-style: none;
     }
-    .grid4 li a:hover{
-        animation: bounce;
-        animation-duration: 1s;
-        background-color: #ffe9ca;
-    }
-    .grid4 li a img{
+    .grid4 li a{
         width: 50px;
-        background-color: #958673;
     }
     .grid4 li a img:hover{
         width: 80px;
-        background-color: #ffe9ca;
+        background-color: #1c44b3;
         border-radius: 15px;
     }
-}
-.mapita{
     
-}
+    .grid4 li a .ig:hover{
+        background-color: #d11b85;
+    }
+    .grid4 li a .mail:hover{
+        background-color: #ce4921;
+    }
+    .grid4 li a .whap:hover{
+        background-color: #11b611;
+    }
