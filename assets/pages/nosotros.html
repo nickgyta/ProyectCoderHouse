@@ -18,25 +18,43 @@
 
 </head>
 
-
 <header>
-
-    <div class="barra">
-        <nav>
-            <ul class="barra__list">
-                <li class="barra__li"><a href="/index.html"><img src="../logo.png" alt="ICO" class="logo__image"></a>
-                </li>
-                <li class="barra__li"><a class="barra__li__anchor" href="./destinos.html"><strong>Destinos</strong>
-                    </a></li>
-                <li class="barra__li"><a class="barra__li__anchor"
-                        href="./reserveEnLinea.html"><strong>Reservas</strong></a></li>
-                <li class="barra__li"><a class="barra__li__anchor" href="./nosotros.html"><strong>Nosotros</strong></a>
-                </li>
-                <li class="barra__li"><a class="barra__li__anchor" href="./contacto.html"><strong>Contacto</strong></a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-#e3f2fd">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html"><img src="../logo.png" alt="ICO" class="logo__image"></a> 
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Destinos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="../pages/destinos.html">Promos de ultimo minuto</a></li>
+                  <li><a class="dropdown-item" href="../pages/reserveEnLinea.html">Paquetes y Tours</a></li>
+              </li>
+               </ul>
+               <li class="nav-item">
+                <a class="nav-link" href="../pages/reserveEnLinea.html">Reservas</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+              </li>
+              <form class="d-flex" style="margin-top: -3px;margin-bottom: 110px;margin-left: 70px;margin-right: 12px;;">
+                <input class="form-control me-2" type="search" placeholder="Buscar.." aria-label="Buscar">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+          </div>
+        </div>
+      </nav>
 </header>
 <p class="info">QUIENES SOMOS?</p>
 <main>

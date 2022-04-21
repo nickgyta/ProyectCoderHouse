@@ -18,43 +18,95 @@
 
 </head>
 
-
 <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-#e3f2fd">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html"><img src="../logo.png" alt="ICO" class="logo__image"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                    </li>
 
-    <div class="barra">
-        <nav>
-            <ul class="barra__list">
-                <li class="barra__li"><a href="/index.html"><img src="../logo.png" alt="ICO" class="logo__image"></a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Destinos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../pages/destinos.html">Promos de ultimo minuto</a></li>
+                            <li><a class="dropdown-item" href="../pages/reserveEnLinea.html">Paquetes y Tours</a></li>
+                    </li>
+                </ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/reserveEnLinea.html">Reservas</a>
                 </li>
-                <li class="barra__li"><a class="barra__li__anchor" href="./destinos.html"><strong>Destinos</strong>
-                    </a></li>
-                <li class="barra__li"><a class="barra__li__anchor"
-                        href="./reserveEnLinea.html"><strong>Reservas</strong></a></li>
-                <li class="barra__li"><a class="barra__li__anchor" href="./nosotros.html"><strong>Nosotros</strong></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
                 </li>
-                <li class="barra__li"><a class="barra__li__anchor" href="./contacto.html"><strong>Contacto</strong></a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+                <form class="d-flex"
+                    style="margin-top: -3px;margin-bottom: 110px;margin-left: 70px;margin-right: 12px;;">
+                    <input class="form-control me-2" type="search" placeholder="Buscar.." aria-label="Buscar">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
 </header>
 
 <body>
     <p class="info">NUESTROS DESTINOS</p>
     <main>
-        <div>
-            <p>"Slide photos"</p>
-            <img src="../img/iguazu.jpg" alt="Iguazu Falls" width="100%">
-            <img src="../img/cancun.jpg" alt="Cancun View" width="100%">
-            <img src="../img/hotelCancun.jpg" alt="Hotel in Cancun" width="100%">
-            <img src="../img/tulum.jpg" alt="Tulum architecture" width="100%">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/iguazu.jpg" class="d-block w-100" alt="Iguazu Falls">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/cancun.jpg" class="d-block w-100" alt="Cancun View">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/hotelCancun.jpg" class="d-block w-100" alt="Hotel in Cancun">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/tulum.jpg" class="d-block w-100" alt="Tulum architecture">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
         </div>
 
         <p class="info">SUPER OFERTAS</p>
 
         <div class="flex__container">
             <div class="cardProduct borderRounded">
-                <img src="./assets/img/cancunPromo.jpg" alt="" class="cardProduct__image borderRounded">
+                <img src="../img/cancunPromo.jpg" alt="" class="cardProduct__image borderRounded">
                 <div class="cardProduct__description">
                     <strong class="cardProduct__description__price">
                         <p>DESTINO TODO INCLUIDO</p>
@@ -67,7 +119,7 @@
                 </div>
             </div>
             <div class="cardProduct borderRounded">
-                <img src="./assets/img/ofertasPromo.jpg" alt="" class="cardProduct__image borderRounded">
+                <img src="../img/ofertasPromo.jpg" alt="" class="cardProduct__image borderRounded">
                 <div class="cardProduct__description">
                     <strong class="cardProduct__description__price">
                         <p>DESTINO TODO INCLUIDO</p>
@@ -80,7 +132,7 @@
                 </div>
             </div>
             <div class="cardProduct borderRounded">
-                <img src="./assets/img/disneyPromo.jpg" alt="" class="cardProduct__image borderRounded">
+                <img src="../img/disneyPromo.jpg" alt="" class="cardProduct__image borderRounded">
                 <div class="cardProduct__description">
                     <strong class="cardProduct__description__price">
                         <p>DESTINO TODO INCLUIDO</p>
@@ -93,7 +145,7 @@
                 </div>
             </div>
             <div class="cardProduct borderRounded">
-                <img src="./assets/img/ofertasPromo.jpg" alt="" class="cardProduct__image borderRounded">
+                <img src="../img/ofertasPromo.jpg" alt="" class="cardProduct__image borderRounded">
                 <div class="cardProduct__description">
                     <strong class="cardProduct__description__price">
                         <p>DESTINO TODO INCLUIDO</p>
@@ -106,7 +158,7 @@
                 </div>
             </div>
             <div class="cardProduct borderRounded">
-                <img src="./assets/img/toursCancun.jpg" alt="" class="cardProduct__image borderRounded">
+                <img src="../img/toursCancun.jpg" alt="" class="cardProduct__image borderRounded">
                 <div class="cardProduct__description">
                     <strong class="cardProduct__description__price">
                         <p>DESTINO TODO INCLUIDO</p>
@@ -119,7 +171,7 @@
                 </div>
             </div>
             <div class="cardProduct borderRounded">
-                <img src="./assets/img/peruPromo.jpg" alt="" class="cardProduct__image borderRounded">
+                <img src="../img/peruPromo.jpg" alt="" class="cardProduct__image borderRounded">
                 <div class="cardProduct__description">
                     <strong class="cardProduct__description__price">
                         <p>DESTINO TODO INCLUIDO</p>
@@ -132,7 +184,7 @@
                 </div>
             </div>
             <div class="cardProduct borderRounded">
-                <img src="./assets/img/turquiaPromo.jpg" alt="" class="cardProduct__image borderRounded">
+                <img src="../img/turquiaPromo.jpg" alt="" class="cardProduct__image borderRounded">
                 <div class="cardProduct__description">
                     <strong class="cardProduct__description__price">
                         <p>DESTINO TODO INCLUIDO</p>
@@ -145,7 +197,7 @@
                 </div>
             </div>
             <div class="cardProduct borderRounded">
-                <img src="./assets/img/canadaPromo.jpg" alt="" class="cardProduct__image borderRounded">
+                <img src="../img/canadaPromo.jpg" alt="" class="cardProduct__image borderRounded">
                 <div class="cardProduct__description">
                     <strong class="cardProduct__description__price">
                         <p>DESTINO TODO INCLUIDO</p>
@@ -158,7 +210,7 @@
                 </div>
             </div>
             <div class="cardProduct borderRounded">
-                <img src="./assets/img/cubaPromo.jpg" alt="" class="cardProduct__image borderRounded">
+                <img src="../img/cubaPromo.jpg" alt="" class="cardProduct__image borderRounded">
                 <div class="cardProduct__description">
                     <strong class="cardProduct__description__price">
                         <p>DESTINO TODO INCLUIDO</p>
@@ -174,13 +226,57 @@
         <div>
             <p class="info">DESTINOS FAVORITOS:</p>
         </div>
-        <div>
-            <ul class="fotos">
-                <li class="fotosLi"><a href="index.html"><img src="../img/patagonia.jpg" alt="Patagonia Argentina"></a>
-                </li>
-                <li class="fotosLi"><a href="index.html"><img src="../img/lasVegas.jpg" alt="Las Vegas"></a></li>
-                <li class="fotosLi"><a href="index.html"><img src="../img/londres.jpg" alt="LONDON"></a></li>
-                <li class="fotosLi"><a href="index.html"><img src="../img/jerusalen.jpg" alt="JERUSALEM"></a</li> </ul>
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="../img/patagonia.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>El fin del mundo patagónico</h5>
+                              <p>Conoce la patagonia Argentina en su maximo esplendor.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="2000">
+                            <img src="../img/lasVegas.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Las Vegas, Nevada</h5>
+                              <p>Conozca la fabulosa ciudad de Las Vegas.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../img/londres.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Londres</h5>
+                              <p>No se pierda de conocer Londres y todos sus atractivos.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../img/jerusalen.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Jerusalem</h5>
+                              <p>Conozca este bello lugar conocido tambien como la tierra santa.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+
+
+
+
+
                             </div> </main> <footer>
                         <div class="piecito">
 
