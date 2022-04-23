@@ -1,7 +1,7 @@
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
     /* color: rgba(0,0,0,.9); */
 }
-
+/* CSS MANUAL DEL NAVEGADOR */
 .nav-link {
     height: 45px;
     text-decoration: none;
@@ -68,6 +68,9 @@
     white-space: nowrap;
     border: 0;
 }
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: initial;
+}
 @media (min-width: 992px){
     .nav-link {
         height: 45px;
@@ -101,6 +104,9 @@
     border-radius: 0.25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: initial;
+}
 }
 header{
     min-height: 100vh;
@@ -110,26 +116,10 @@ header{
     width: auto;
 }
 
-
 .logo__image{
     display: grid;
     width: 95%;
     justify-content: center;
-}
-
-
-@media screen and (min-width: 545px) {
-    header {
-        min-height: 100vh;
-        margin: 0 auto;
-        background-image: url(https://wallpapercave.com/wp/wp4069424.jpg);
-        width: auto;
-    }
-    .logo__image{
-        display: grid;
-        width: 90%;
-        justify-content: center;
-    }
 }
 
 
@@ -185,7 +175,8 @@ iframe{
 }
 div p{
     font-family: 'Aclonica';
-    color: crimson;
+    color: #ed5b15;
+    font-size: small;
 }
 main{
     display: flex;
@@ -198,7 +189,7 @@ main{
     font-size: larger;
     justify-content: left;
     font-family: 'Aclonica', sans-serif;
-    color: crimson;
+    color: #ed5b15;
     background-image: linear-gradient(to right bottom, #4f3e37, #dbe4cf);
     padding: 9px;
     margin-top: -18px;
@@ -308,8 +299,8 @@ color: rgba(24,149,215,1);
 .backg{
     font-family: cursive;
     display: flex;
-    background-color: rgba(24,149,215,1);
-    color: rgb(68, 67, 67);
+    background-color: rgb(252 153 26);
+    color: rgb(255 255 255);
     font-size: x-large;
 }
 .negrin{
@@ -340,7 +331,7 @@ color: rgba(24,149,215,1);
 }
 .grid1 li p{
     display: grid;
-    color: crimson;
+    color: #ed5b15;
     font-size: 24px;
     font-family: 'Aclonica';
 }
@@ -348,18 +339,22 @@ color: rgba(24,149,215,1);
     list-style: none;
     display: grid;
     font-size: small;
+    animation: wobble;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
 }
 .grid2 li h2{
     display: grid;
     width: fit-content;
     font-family: 'Playball', cursive;
-    color: antiquewhite;
+    color: #2400edeb;
 }
 .grid3{
     display: grid;
     justify-content: space-between;
     list-style: none;
-    color: #ffe9ca;
+    color: #fdd61bd9;
     font-size: 15px;
 }
 .grid3 h2{
@@ -372,7 +367,7 @@ color: rgba(24,149,215,1);
 .grid4{
     display: grid;
     justify-content: space-between;
-    color: #ffe9ca;
+    color: #ed5b15;
     list-style: none;
 }
 
@@ -411,24 +406,30 @@ color: rgba(24,149,215,1);
     }
     .grid1 li h1{
         display: grid;
-        color: crimson;
+        color: #ed5b15;
     }
     .grid2{
         list-style: none;
         display: grid;
         font-size: small;
+        display: inline-block;
+        margin: 0 0.5rem;
+        animation: wobble;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    
     }
     .grid2 li h2{
         display: grid;
         width: fit-content;
         font-family: 'Playball', cursive;
-        color: #ffe9ca;
+        color: #2400edeb;
     }
     .grid3{
         display: grid;
         justify-content: space-between;
         list-style: none;
-        color: #ffe9ca;
+        color: #fdd61bd9;
         font-size: 15px;
     }
     .grid3 h2{
@@ -440,7 +441,7 @@ color: rgba(24,149,215,1);
     .grid4{
         display: grid;
         justify-content: space-between;
-        color: #ffe9ca;
+        color: #ed5b15;
         list-style: none;
     }
     .grid4 li a{
@@ -461,3 +462,17 @@ color: rgba(24,149,215,1);
     .grid4 li a .whap:hover{
         background-color: #11b611;
     }
+
+
+.anita{
+    text-align: center;
+}
+hr:not([size]) {
+    height: 8px;
+}
+hr{
+    background-color: crimson;
+}
+.rounded {
+    border-radius: 3.25rem!important;
+}
