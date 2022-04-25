@@ -70,7 +70,7 @@
 
 .nav-item {
   display: flex; }
-  .nav-item:hover {
+  .nav-item:active {
     animation: heartBeat;
     animation-duration: 5s;
     animation-iteration-count: infinite; }
@@ -151,6 +151,21 @@ body {
 
 li.slide img {
   width: 100%; }
+
+.rounded {
+  margin-top: 5px;
+  margin-left: 14px;
+  margin-right: 48px;
+  margin-bottom: 27px;
+  border-radius: 3.25rem !important; }
+
+@media screen and (min-width: 500px) {
+  .rounded {
+    margin-top: 5px;
+    margin-left: 14px;
+    margin-right: 48px;
+    margin-bottom: 27px;
+    border-radius: 3.25rem !important; } }
 
 footer {
   display: grid;
@@ -325,7 +340,7 @@ li p {
   list-style: none;
   display: grid;
   font-size: small;
-  animation: wobble;
+  animation: none;
   animation-duration: 5s;
   animation-iteration-count: infinite; }
 
