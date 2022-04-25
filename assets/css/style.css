@@ -44,7 +44,7 @@
 
 .navbar-toggler-icon {
   display: inline-block;
-  background-color: #ed5b15bf;
+  background-color: #ed5b15c2;
   width: 1.5em;
   height: 1.5em;
   vertical-align: middle;
@@ -67,6 +67,13 @@
 
 .navbar-expand-lg .navbar-nav .dropdown-menu {
   position: initial; }
+
+.nav-item {
+  display: flex; }
+  .nav-item:hover {
+    animation: heartBeat;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; }
 
 @media (min-width: 992px) {
   .nav-link {
@@ -113,6 +120,10 @@ header {
   display: grid;
   width: 95%;
   justify-content: center; }
+  .logo__image:hover {
+    animation: shakeY;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; }
 
 body {
   font-family: sans-serif;
@@ -146,11 +157,11 @@ footer {
   min-width: 250px;
   background-image: linear-gradient(to right bottom, #4f3e37, #dbe4cf); }
 
-footer div h1 {
+div h1 {
   display: flex;
   font-family: 'Aclonica', sans-serif; }
 
-footer div h3 {
+h3 {
   display: flex; }
 
 iframe {
@@ -280,6 +291,18 @@ main {
   color: RGB(255 255 255);
   font-size: x-large; }
 
+.negrin {
+  background-color: RGB(68, 67, 67); }
+
+.negrin__li {
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  font-size: x-large;
+  flex-flow: column;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: antiquewhite; }
+
 .piecito {
   display: grid;
   grid-template-rows: 10% 10% 40% 30%;
@@ -291,7 +314,7 @@ main {
   justify-content: space-between;
   list-style: none; }
 
-.grid1 li p {
+li p {
   display: grid;
   color: #ed5b15;
   font-size: 24px;
@@ -305,7 +328,7 @@ main {
   animation-duration: 5s;
   animation-iteration-count: infinite; }
 
-.grid2 li h2 {
+li h2 {
   display: grid;
   width: fit-content;
   font-family: 'Playball', cursive;
@@ -330,22 +353,28 @@ main {
   color: #ed5b15;
   list-style: none; }
 
-.grid4 li a img {
+li a img {
   width: 50px; }
 
-.grid4 li a img:hover {
+.face:hover {
   width: 80px;
-  background-color: #1c44b3;
+  background-color: #2400edeb;
   border-radius: 15px; }
 
-.grid4 li a .ig:hover {
-  background-color: #d11b85; }
+.ig:hover {
+  background-color: #d11b85;
+  width: 80px;
+  border-radius: 15px; }
 
-.grid4 li a .mail:hover {
-  background-color: #ffe9ca; }
+.mail:hover {
+  background-color: #ce4921;
+  width: 80px;
+  border-radius: 15px; }
 
-.grid4 li a .whap:hover {
-  background-color: #11b611; }
+.whap:hover {
+  background-color: #11b611;
+  width: 80px;
+  border-radius: 15px; }
 
 @media screen and (min-width: 500px) {
   .piecito {
@@ -358,7 +387,7 @@ main {
     font-size: small;
     justify-content: space-between;
     list-style: none; }
-  .grid1 li h1 {
+  h1 {
     display: grid;
     color: #ed5b15; }
   .grid2 {
@@ -370,7 +399,7 @@ main {
     animation: wobble;
     animation-duration: 5s;
     animation-iteration-count: infinite; }
-  .grid2 li h2 {
+  li h2 {
     display: grid;
     width: fit-content;
     font-family: 'Playball', cursive;
@@ -390,18 +419,24 @@ main {
     justify-content: space-between;
     color: #ed5b15;
     list-style: none; }
-  .grid4 li a {
+  li a img {
     width: 50px; }
-  .grid4 li a img:hover {
+  .face:hover {
     width: 80px;
-    background-color: #1c44b3;
+    background-color: #2400edeb;
     border-radius: 15px; }
-  .grid4 li a .ig:hover {
-    background-color: #d11b85; }
-  .grid4 li a .mail:hover {
-    background-color: #ce4921; }
-  .grid4 li a .whap:hover {
-    background-color: #11b611; }
+  .ig:hover {
+    background-color: #d11b85;
+    width: 80px;
+    border-radius: 15px; }
+  .mail:hover {
+    background-color: #ce4921;
+    width: 80px;
+    border-radius: 15px; }
+  .whap:hover {
+    background-color: #11b611;
+    width: 80px;
+    border-radius: 15px; }
   .anita {
     text-align: center; }
   hr:not([size]) {

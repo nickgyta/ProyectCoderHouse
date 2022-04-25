@@ -1,11 +1,10 @@
 /* CSS MANUAL DEL NAVEGADOR */
-@import 'colores';
-
+@import'colores';
 .nav-link {
     height: 45px;
     text-decoration: none;
     border-radius: 12px;
-    border: RGB(2 0 0 / 30%) 0px solid;
+    border: RGB(2 0 0/ 30%) 0px solid;
     box-sizing: border-box;
     padding: 11px;
     margin-bottom: 4px;
@@ -40,13 +39,13 @@
     color: RGB(255 255 255);
 }
 .navbar-light .navbar-toggler {
-    background-color: $naranjitaTr;
-    color: $naranjitaTr;
-    border-color: $naranjitaTr;
+    background-color: #ed5b15bf;
+    color: #ed5b15bf;
+    border-color: #ed5b15bf;
 }
 .navbar-toggler-icon {
     display: inline-block;
-    background-color: $naranjitaTr;
+    background-color: #ed5b15c2;
     width: 1.5em;
     height: 1.5em;
     vertical-align: middle;
@@ -70,6 +69,14 @@
 .navbar-expand-lg .navbar-nav .dropdown-menu {
     position: initial;
 }
+.nav-item{
+    display: flex;
+            &:hover{
+                animation: heartBeat;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+            }
+}
 @media (min-width: 992px){
     .nav-link {
         height: 45px;
@@ -81,7 +88,7 @@
         margin-bottom: 0px;
         margin-left: -90px;
         margin-right: 117px;
-        background: $naranjitaTr;
+        background: #ed5b15bf;
         color: $blanquis;
         display: block;
         transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
@@ -119,6 +126,12 @@ header{
     display: grid;
     width: 95%;
     justify-content: center;
+
+                &:hover{
+                    animation: shakeY;
+                    animation-duration: 5s;
+                    animation-iteration-count: infinite;
+                }
 }
 
 
@@ -157,11 +170,11 @@ footer{
     min-width: 250px;
     background-image: linear-gradient(to right bottom, #4f3e37, #dbe4cf);
 }
-footer div h1{
+div h1{
     display: flex;
     font-family: 'Aclonica', sans-serif;
 }
-footer div h3{
+ h3{
     display: flex;
 
 }
@@ -227,7 +240,7 @@ color: rgba(24,149,215,1);
     padding: 10px;
     margin-bottom: 30px;
     margin-left: 30px;
-    background: $naranjitaTr;
+    background: #ed5b15bf;
     color: $blanquis;
     font-weight: bold;
     font-size: 12pt;
@@ -302,6 +315,19 @@ color: rgba(24,149,215,1);
     color: RGB(255 255 255);
     font-size: x-large;
 }
+.negrin{
+    background-color: RGB(68, 67, 67);
+}
+.negrin__li{
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-large;
+    flex-flow: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: antiquewhite;
+
+}
 
 .piecito{
     display: grid;
@@ -315,7 +341,7 @@ color: rgba(24,149,215,1);
     justify-content: space-between;
     list-style: none;
 }
-.grid1 li p{
+li p{
     display: grid;
     color: $naranjita;
     font-size: 24px;
@@ -330,11 +356,11 @@ color: rgba(24,149,215,1);
     animation-iteration-count: infinite;
 
 }
-.grid2 li h2{
+ li h2{
     display: grid;
     width: fit-content;
     font-family: 'Playball', cursive;
-    color: #2400edeb;
+    color: $face;
 }
 .grid3{
     display: grid;
@@ -357,23 +383,29 @@ color: rgba(24,149,215,1);
     list-style: none;
 }
 
-.grid4 li a img{
+li a img{
     width: 50px;
 }   
- .grid4 li a img:hover{
-    width: 80px;
-    background-color: #1c44b3;
-    border-radius: 15px;
+                    .face:hover {
+                    width: 80px;
+                    background-color: $face;
+                    border-radius: 15px;
 }
 
-.grid4 li a .ig:hover{
-    background-color: #d11b85;
+                    .ig:hover{
+                    background-color: $ig;
+                    width: 80px;
+                    border-radius: 15px;
 }
-.grid4 li a .mail:hover{
-    background-color: #ffe9ca;
+                    .mail:hover{
+                    background-color: $mail;
+                    width: 80px;
+                    border-radius: 15px;
 }
-.grid4 li a .whap:hover{
-    background-color: #11b611;
+                    .whap:hover{
+                    background-color: $whap;
+                    width: 80px;
+                    border-radius: 15px;
 }
 
 @media screen and (min-width: 500px) {
@@ -390,7 +422,7 @@ color: rgba(24,149,215,1);
         justify-content: space-between;
         list-style: none;
     }
-    .grid1 li h1{
+     h1{
         display: grid;
         color: $naranjita;
     }
@@ -405,11 +437,11 @@ color: rgba(24,149,215,1);
         animation-iteration-count: infinite;
     
     }
-    .grid2 li h2{
+      li h2{
         display: grid;
         width: fit-content;
         font-family: 'Playball', cursive;
-        color: #2400edeb;
+        color: $face;
     }
     .grid3{
         display: grid;
@@ -430,24 +462,30 @@ color: rgba(24,149,215,1);
         color: $naranjita;
         list-style: none;
     }
-    .grid4 li a{
+    li a img{
         width: 50px;
     }
-    .grid4 li a img:hover{
+        .face:hover{
         width: 80px;
-        background-color: #1c44b3;
+        background-color: $face;
         border-radius: 15px;
     }
     
-    .grid4 li a .ig:hover{
-        background-color: #d11b85;
-    }
-    .grid4 li a .mail:hover{
-        background-color: #ce4921;
-    }
-    .grid4 li a .whap:hover{
-        background-color: #11b611;
-    }
+    .ig:hover{
+        background-color: $ig;
+        width: 80px;
+        border-radius: 15px;
+}
+        .mail:hover{
+        background-color: $mail;
+        width: 80px;
+        border-radius: 15px;
+}
+        .whap:hover{
+        background-color: $whap;
+        width: 80px;
+        border-radius: 15px;
+}
 
 
 .anita{
