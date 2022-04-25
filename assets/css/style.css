@@ -107,7 +107,8 @@
     border-radius: 0.25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; }
   .navbar-expand-lg .navbar-nav .dropdown-menu {
-    position: initial; } }
+    position: initial;
+    height: 74px; } }
 
 header {
   min-height: 100vh;
