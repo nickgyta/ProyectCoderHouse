@@ -1,0 +1,8 @@
+_Proyecto con diseño Responsive adaptado a dispositivos mobile y desktop. Utilizacion de maquetado en grid, cards en flexbox.
+_Utilizacion de Bootstrap.
+ _Utilizacion y personalizacion de Código Scss: aplicando nesting y mixins con variables y operadores del lenguaje Sass.
+_Carga de mi html Ignoring carpeta node-modules
+_Package.json con info correspondiente.
+_Link de Repositorio en Github: https://github.com/nickgyta/ProyectCoderHouse/tree/main
+_Link page en Github: https://nickgyta.github.io/ProyectCoderHouse/
+_Pagina web subida al servidor de 000webhost.com: https://mngimenezaviles.000webhostapp.com/
