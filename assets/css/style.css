@@ -36,8 +36,8 @@
     box-sizing: border-box;
     padding: 11px;
     margin-bottom: 1px;
-    margin-left: 10px;
-    margin-right: 224px;
+    margin-left: 0px;
+    margin-right: 300px;
     background: #ed5b15;
     color: #ffff;
     display: block;
@@ -53,6 +53,13 @@
   background-color: #ed5b15bf;
   color: #ed5b15bf;
   border-color: #ed5b15bf; }
+
+.navbar-toggler {
+  margin: 150px;
+  margin-left: 31px;
+  margin-right: 250px;
+  margin-top: 0px;
+  font-family: inherit; }
 
 .navbar-toggler-icon {
   display: inline-block;
@@ -92,10 +99,10 @@
   padding-top: 0px; }
 
 .d-flex {
-  margin-top: 80px;
-  margin-bottom: 191px;
-  margin-left: 37px;
-  margin-right: 221px; }
+  margin-top: 77px;
+  margin-bottom: 170px;
+  margin-left: 8px;
+  margin-right: 320px; }
   .d-flex .form-control {
     margin-top: 3px;
     margin-bottom: 29px;
@@ -114,13 +121,16 @@
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; }
   .d-flex .btn {
     display: flex;
-    height: 38px;
+    height: 42px;
     border-radius: 20px;
     border: RGB(2 0 0/30%) 0px solid;
     box-sizing: border-box;
     padding: 6px;
-    margin-bottom: 30px;
-    margin-left: 11px;
+    margin-top: 7px;
+    margin-bottom: 0px;
+    margin-bottom: 27px;
+    margin-left: 7px;
+    margin-right: -182px;
     background: #ed5b15bf;
     color: #ffff;
     font-weight: bold;
@@ -305,8 +315,8 @@ body {
 .slide {
   display: flex;
   border-radius: 13px;
-  margin-bottom: 20px;
-  padding-top: 10px;
+  margin-bottom: 0px;
+  padding-top: 0px;
   padding-left: 00px;
   padding-bottom: 0px; }
 
@@ -372,8 +382,10 @@ main {
   color: #ed5b15;
   background-image: linear-gradient(to right bottom, #4f3e37, #dbe4cf);
   padding: 9px;
-  margin-top: -18px;
-  margin-bottom: -1px; }
+  margin-top: 0px;
+  margin-right: -3px;
+  margin-left: -3px;
+  margin-bottom: 0px; }
   .info .row {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
@@ -435,7 +447,7 @@ main {
     border-radius: 10px; }
   .flex__container .cardProduct {
     width: 300px;
-    height: 450px;
+    height: 420px;
     border-color: #a8a5a5;
     border-style: solid;
     border-width: 3px;
@@ -459,7 +471,9 @@ main {
       justify-content: space-evenly;
       border-radius: 20px;
       padding: 16px;
-      margin-top: 38px;
+      padding-left: 35px;
+      padding-right: 35px;
+      margin-top: 20px;
       margin-bottom: 30px;
       margin-left: 30px;
       background: #ed5b15;
