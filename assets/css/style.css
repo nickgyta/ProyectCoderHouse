@@ -695,23 +695,23 @@ li a img {
       margin-top: 10px; }
       .piecito .grid4 li a img {
         width: 40px;
-        margin-top: 9px; }
-        .piecito .grid4 li a img .face:hover {
-          width: 80px;
-          background-color: #2400edeb;
-          border-radius: 15px; }
-        .piecito .grid4 li a img .ig:hover {
-          background-color: #d11b85;
-          width: 80px;
-          border-radius: 15px; }
-        .piecito .grid4 li a img .mail:hover {
-          background-color: #ce4921;
-          width: 80px;
-          border-radius: 15px; }
-        .piecito .grid4 li a img .whap:hover {
-          background-color: #11b611;
-          width: 80px;
-          border-radius: 15px; } }
+        margin-top: 2px; }
+      .piecito .grid4 .face:hover {
+        width: 80px;
+        background-color: #2400edeb;
+        border-radius: 15px; }
+      .piecito .grid4 .ig:hover {
+        background-color: #d11b85;
+        width: 80px;
+        border-radius: 15px; }
+      .piecito .grid4 .mail:hover {
+        background-color: #ce4921;
+        width: 80px;
+        border-radius: 15px; }
+      .piecito .grid4 .whap:hover {
+        background-color: #11b611;
+        width: 80px;
+        border-radius: 15px; } }
 
 .guadi {
   display: block; }
