@@ -600,8 +600,8 @@ li a img {
   border-radius: 15px; }
 
 .ig:hover {
-  background-color: #d11b85;
   width: 80px;
+  background-color: #d11b85;
   border-radius: 15px; }
 
 .mail:hover {
@@ -696,22 +696,17 @@ li a img {
       .piecito .grid4 li a img {
         width: 40px;
         margin-top: 2px; }
+      .piecito .grid4 img:hover, .piecito .grid4 .face:hover, .piecito .grid4 .ig:hover, .piecito .grid4 .mail:hover, .piecito .grid4 .whap:hover {
+        width: 80px;
+        border-radius: 15px; }
       .piecito .grid4 .face:hover {
-        width: 80px;
-        background-color: #2400edeb;
-        border-radius: 15px; }
+        background-color: #2400edeb; }
       .piecito .grid4 .ig:hover {
-        background-color: #d11b85;
-        width: 80px;
-        border-radius: 15px; }
+        background-color: #d11b85; }
       .piecito .grid4 .mail:hover {
-        background-color: #ce4921;
-        width: 80px;
-        border-radius: 15px; }
+        background-color: #ce4921; }
       .piecito .grid4 .whap:hover {
-        background-color: #11b611;
-        width: 80px;
-        border-radius: 15px; } }
+        background-color: #11b611; } }
 
 .guadi {
   display: block; }
@@ -720,7 +715,7 @@ li a img {
     margin-bottom: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    font-family: 'Aclonica';
+    font-family: Aclonica;
     color: #ed5b15;
     font-size: medium; }
 
@@ -732,7 +727,7 @@ li a img {
     margin-bottom: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    font-family: 'Aclonica';
+    font-family: Aclonica;
     color: #ed5b15;
     font-size: medium; }
 
@@ -749,7 +744,7 @@ hr {
     margin-bottom: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    font-family: 'Aclonica';
+    font-family: Aclonica;
     color: #ed5b15;
     font-size: medium; }
 

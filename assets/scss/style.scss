@@ -644,15 +644,16 @@ color: rgba(24,149,215,1);
 li a img{
     width: 50px;
 }   
-                    .face:hover {
+
+                    .face:hover{
                     width: 80px;
                     background-color: $face;
                     border-radius: 15px;
 }
 
                     .ig:hover{
-                    background-color: $ig;
                     width: 80px;
+                    background-color: $ig;
                     border-radius: 15px;
 }
                     .mail:hover{
@@ -739,56 +740,54 @@ li a img{
                                             li a img{
                                                 width: 40px;
                                                 margin-top: 2px;}
+
+                                                img:hover{
+                                                    width: 80px;
+                                                    border-radius: 15px;
+                                                }
                                             
                                                         .face:hover{
-                                                            width: 80px;
+                                                            @extend img:hover ;
                                                             background-color: $face;
-                                                            border-radius: 15px;
                                                         }
                                                         
                                                         .ig:hover{
+                                                            @extend img:hover ;
                                                             background-color: $ig;
-                                                            width: 80px;
-                                                            border-radius: 15px;
                                                         }
                                                         .mail:hover{
+                                                            @extend img:hover ;
                                                             background-color: $mail;
-                                                            width: 80px;
-                                                            border-radius: 15px;
                                                         }
                                                         .whap:hover{
+                                                            @extend img:hover ;
                                                             background-color: $whap;
-                                                            width: 80px;
-                                                            border-radius: 15px;
                                                         }
                                             
                         }
         }
 }
+@mixin datos($marT, $marB, $marL, $marR, $fontF, $col, $fontS) {
+    margin-top: $marT;
+    margin-bottom: $marB;
+    margin-left: $marL;
+    margin-right: $marR;
+    font-family: $fontF;
+    color: $col;
+    font-size: $fontS;
 
+}
 .guadi{
     display: block;
                     p{
-                        margin-top: 1rem;
-                        margin-bottom: 1rem;
-                        margin-left: 1rem;
-                        margin-right: 1rem;
-                        font-family: 'Aclonica';
-                        color: #ed5b15;
-                        font-size: medium;
+                        @include datos(1rem, 1rem, 1rem, 1rem, Aclonica, #ed5b15, medium);
                     }
 }
 .anita{
     display: block;
     text-align: center;
                     p{
-                        margin-top: 1rem;
-                        margin-bottom: 1rem;
-                        margin-left: 1rem;
-                        margin-right: 1rem;
-                        font-family: 'Aclonica';
-                        color: #ed5b15;
-                        font-size: medium;
+                        @include datos(1rem, 1rem, 1rem, 1rem, Aclonica, #ed5b15, medium);
                     }
 }
 hr:not([size]) {
@@ -800,13 +799,7 @@ hr{
 .juan{
     display: block;
                     p{
-                        margin-top: 1rem;
-                        margin-bottom: 1rem;
-                        margin-left: 1rem;
-                        margin-right: 1rem;
-                        font-family: 'Aclonica';
-                        color: #ed5b15;
-                        font-size: medium;
+                        @include datos(1rem, 1rem, 1rem, 1rem, Aclonica, #ed5b15, medium);
                     }
 }
 .rounded {
